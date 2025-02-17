@@ -1,0 +1,107 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "field:school_name",
+ "creation": "2025-02-17 08:52:00.677724",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "school_name",
+  "address",
+  "postal_code",
+  "column_break_ncow",
+  "primary_contact_no",
+  "alternate_contact_no",
+  "column_break_qdxz",
+  "country",
+  "state",
+  "district"
+ ],
+ "fields": [
+  {
+   "fieldname": "school_name",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "School Name",
+   "reqd": 1,
+   "unique": 1
+  },
+  {
+   "fieldname": "country",
+   "fieldtype": "Link",
+   "label": "Country",
+   "options": "Country",
+   "reqd": 1
+  },
+  {
+   "fieldname": "state",
+   "fieldtype": "Link",
+   "label": "State",
+   "options": "State",
+   "reqd": 1
+  },
+  {
+   "fieldname": "district",
+   "fieldtype": "Link",
+   "label": "District",
+   "options": "District",
+   "reqd": 1
+  },
+  {
+   "fieldname": "address",
+   "fieldtype": "Data",
+   "label": "Address",
+   "reqd": 1
+  },
+  {
+   "fieldname": "postal_code",
+   "fieldtype": "Data",
+   "label": "Postal Code",
+   "reqd": 1
+  },
+  {
+   "fieldname": "column_break_ncow",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "column_break_qdxz",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "primary_contact_no",
+   "fieldtype": "Phone",
+   "label": "Primary Contact No.",
+   "reqd": 1
+  },
+  {
+   "fieldname": "alternate_contact_no",
+   "fieldtype": "Phone",
+   "label": "Alternate Contact No."
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2025-02-17 10:25:40.964990",
+ "modified_by": "Administrator",
+ "module": "School Management System",
+ "name": "School",
+ "naming_rule": "By fieldname",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

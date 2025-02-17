@@ -1,29 +1,47 @@
 {
  "actions": [],
  "allow_rename": 1,
- "autoname": "field:year",
- "creation": "2025-02-16 15:16:07.488329",
+ "autoname": "field:district",
+ "creation": "2025-02-17 10:19:26.095656",
  "doctype": "DocType",
  "engine": "InnoDB",
  "field_order": [
-  "year"
+  "country",
+  "state",
+  "district"
  ],
  "fields": [
   {
-   "fieldname": "year",
+   "fieldname": "country",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Country",
+   "options": "Country",
+   "reqd": 1
+  },
+  {
+   "fieldname": "state",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "State",
+   "options": "State",
+   "reqd": 1
+  },
+  {
+   "fieldname": "district",
    "fieldtype": "Data",
    "in_list_view": 1,
-   "label": "Year",
+   "label": "District",
    "reqd": 1,
    "unique": 1
   }
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2025-02-17 07:17:46.278785",
+ "modified": "2025-02-17 10:20:39.796030",
  "modified_by": "Administrator",
  "module": "School Management System",
- "name": "Admission Year",
+ "name": "District",
  "naming_rule": "By fieldname",
  "owner": "Administrator",
  "permissions": [

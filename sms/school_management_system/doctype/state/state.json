@@ -1,29 +1,37 @@
 {
  "actions": [],
  "allow_rename": 1,
- "autoname": "field:year",
- "creation": "2025-02-16 15:16:07.488329",
+ "autoname": "field:state",
+ "creation": "2025-02-17 10:16:44.588114",
  "doctype": "DocType",
  "engine": "InnoDB",
  "field_order": [
-  "year"
+  "country",
+  "state"
  ],
  "fields": [
   {
-   "fieldname": "year",
-   "fieldtype": "Data",
+   "fieldname": "country",
+   "fieldtype": "Link",
    "in_list_view": 1,
-   "label": "Year",
+   "label": "Country",
+   "options": "Country",
+   "reqd": 1
+  },
+  {
+   "fieldname": "state",
+   "fieldtype": "Data",
+   "label": "State",
    "reqd": 1,
    "unique": 1
   }
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2025-02-17 07:17:46.278785",
+ "modified": "2025-02-17 10:17:29.792052",
  "modified_by": "Administrator",
  "module": "School Management System",
- "name": "Admission Year",
+ "name": "State",
  "naming_rule": "By fieldname",
  "owner": "Administrator",
  "permissions": [

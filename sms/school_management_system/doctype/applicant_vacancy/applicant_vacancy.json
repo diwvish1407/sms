@@ -1,0 +1,92 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2025-02-17 11:58:24.029886",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "school",
+  "country",
+  "state",
+  "district",
+  "school_address",
+  "class",
+  "vacancy"
+ ],
+ "fields": [
+  {
+   "columns": 1,
+   "fieldname": "vacancy",
+   "fieldtype": "Int",
+   "in_list_view": 1,
+   "label": "Vacancy",
+   "reqd": 1
+  },
+  {
+   "columns": 1,
+   "fieldname": "class",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Class",
+   "options": "Class",
+   "reqd": 1
+  },
+  {
+   "columns": 3,
+   "fieldname": "school",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "School",
+   "options": "School",
+   "reqd": 1
+  },
+  {
+   "columns": 1,
+   "fetch_from": "school.country",
+   "fieldname": "country",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Country",
+   "read_only": 1
+  },
+  {
+   "columns": 1,
+   "fetch_from": "school.state",
+   "fieldname": "state",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "State",
+   "read_only": 1
+  },
+  {
+   "columns": 1,
+   "fetch_from": "school.district",
+   "fieldname": "district",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "District",
+   "read_only": 1
+  },
+  {
+   "columns": 2,
+   "fieldname": "school_address",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "School Address",
+   "read_only": 1
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "istable": 1,
+ "links": [],
+ "modified": "2025-02-17 12:18:44.909349",
+ "modified_by": "Administrator",
+ "module": "School Management System",
+ "name": "Applicant Vacancy",
+ "owner": "Administrator",
+ "permissions": [],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

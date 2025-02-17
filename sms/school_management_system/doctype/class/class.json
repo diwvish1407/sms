@@ -1,29 +1,29 @@
 {
  "actions": [],
  "allow_rename": 1,
- "autoname": "field:year",
- "creation": "2025-02-16 15:16:07.488329",
+ "autoname": "field:class",
+ "creation": "2025-02-17 12:00:33.627117",
  "doctype": "DocType",
  "engine": "InnoDB",
  "field_order": [
-  "year"
+  "class"
  ],
  "fields": [
   {
-   "fieldname": "year",
+   "fieldname": "class",
    "fieldtype": "Data",
    "in_list_view": 1,
-   "label": "Year",
+   "label": "Class",
    "reqd": 1,
    "unique": 1
   }
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2025-02-17 07:17:46.278785",
+ "modified": "2025-02-17 12:01:08.792666",
  "modified_by": "Administrator",
  "module": "School Management System",
- "name": "Admission Year",
+ "name": "Class",
  "naming_rule": "By fieldname",
  "owner": "Administrator",
  "permissions": [
