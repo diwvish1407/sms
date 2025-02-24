@@ -1,6 +1,7 @@
 {
  "actions": [],
  "allow_rename": 1,
+ "autoname": "field:title",
  "creation": "2025-02-17 07:18:16.990201",
  "doctype": "DocType",
  "engine": "InnoDB",
@@ -12,7 +13,7 @@
   "acceptable_payment_type",
   "documents_required",
   "column_break_ymhy",
-  "admission_year",
+  "academic_year",
   "posting_date",
   "application_begin_date",
   "application_end_date",
@@ -43,7 +44,8 @@
    "fieldtype": "Data",
    "in_list_view": 1,
    "label": "Title",
-   "reqd": 1
+   "reqd": 1,
+   "unique": 1
   },
   {
    "fieldname": "column_break_ymhy",
@@ -71,13 +73,6 @@
    "fieldname": "application_end_date",
    "fieldtype": "Date",
    "label": "Application End Date",
-   "reqd": 1
-  },
-  {
-   "fieldname": "admission_year",
-   "fieldtype": "Link",
-   "label": "Admission Year",
-   "options": "Admission Year",
    "reqd": 1
   },
   {
@@ -120,15 +115,23 @@
   {
    "fieldname": "section_break_baim",
    "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "academic_year",
+   "fieldtype": "Link",
+   "label": "Academic Year",
+   "options": "Academic Year",
+   "reqd": 1
   }
  ],
  "index_web_pages_for_search": 1,
  "is_submittable": 1,
  "links": [],
- "modified": "2025-02-17 12:37:27.545795",
+ "modified": "2025-02-17 12:57:24.692647",
  "modified_by": "Administrator",
  "module": "School Management System",
  "name": "Admission Notification",
+ "naming_rule": "By fieldname",
  "owner": "Administrator",
  "permissions": [
   {

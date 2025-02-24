@@ -5,5 +5,5 @@
 from frappe.model.document import Document
 
 
-class AdmissionYear(Document):
+class AcademicPeriod(Document):
 	pass

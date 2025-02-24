@@ -5,5 +5,5 @@
 from frappe.tests.utils import FrappeTestCase
 
 
-class TestAdmissionYear(FrappeTestCase):
+class TestAcademicPeriod(FrappeTestCase):
 	pass

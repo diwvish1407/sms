@@ -175,7 +175,8 @@ app_license = "mit"
 # ------------------------------
 #
 # override_whitelisted_methods = {
-# 	"frappe.desk.doctype.event.event.get_events": "sms.event.get_events"
+# 	# "frappe.desk.doctype.event.event.get_events": "sms.event.get_events"
+#     "frappe.core.doctype.user.user.switch_theme": "sms.overrides.switch_theme.switch_theme"
 # }
 #
 # each overriding function accepts a `data` argument;
@@ -242,3 +243,11 @@ app_license = "mit"
 # 	"Logging DocType Name": 30  # days to retain logs
 # }
 
+# fixtures = [
+#     {
+#         "dt": "Workspace",
+#         "filters": {
+#             "name": "School Management System"
+#         }
+#     }
+# ]
